@@ -1,0 +1,117 @@
+:root {
+  --ink: #21263a;
+  --paper: #faf6ee;
+  --card: #ffffff;
+  --accent: #8b3a3a;
+  --muted: #6b6f7d;
+  --border: #e7e0d2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.story-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(33, 38, 58, 0.06);
+}
+
+.story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+}
+
+.story-title {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+}
+
+.story-text {
+  font-size: 1.15rem;
+  white-space: pre-line;
+  margin: 0 0 2rem;
+}
+
+.glossary h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+.glossary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+.glossary li {
+  font-size: 0.95rem;
+}
+
+.glossary .fr {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.glossary .en {
+  color: var(--muted);
+}
+
+.loading,
+.error {
+  color: var(--muted);
+  text-align: center;
+}
+
+.page-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 2.5rem;
+}
